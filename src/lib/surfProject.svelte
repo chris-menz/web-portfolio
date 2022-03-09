@@ -375,4 +375,18 @@
             margin-bottom: 00.25em;
         }
     }
+
+    @media (max-width: 500px) {
+        .header a {
+            font-size: 2.25rem;
+        }
+
+        .buttons-container a {
+            font-size: 1rem;
+        }
+
+        .carousel {
+            max-width: 350px;
+        }
+    }
 </style>
