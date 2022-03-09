@@ -374,6 +374,10 @@
         .buttons-container {
             margin-bottom: 00.25em;
         }
+
+        .purpose-tab, .features-tab {
+            color: rgb(83, 83, 83);
+        }
     }
 
     @media (max-width: 500px) {
