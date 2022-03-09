@@ -387,6 +387,7 @@
 
         .buttons-container a {
             font-size: 1rem;
+            text-align: center;
         }
 
         .carousel {
