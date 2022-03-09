@@ -26,7 +26,7 @@
         carousel.goToNext()
     }
 
-    const images = ["./../static/surf-images/surfwebimage1.png", "./../static/surf-images/surfwebimage2.png", "./../static/surf-images/surfwebimage3.png", "./../static/surf-images/surfwebimage4.png"]
+    const images = ["./../surf-images/surfwebimage1.png", "./../surf-images/surfwebimage2.png", "./../surf-images/surfwebimage3.png", "./../surf-images/surfwebimage4.png"]
 
 </script>
 

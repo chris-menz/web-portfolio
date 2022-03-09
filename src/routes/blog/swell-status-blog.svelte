@@ -4,7 +4,7 @@
     
     let y;
 
-    const images = ["./../static/plans-images/IMG_2698.PNG", "./../static/plans-images/IMG_2699.PNG", "./../static/plans-images/IMG_2700.PNG", "./../static/plans-images/IMG_2701.PNG", "./../static/plans-images/IMG_2702.PNG", "./../static/plans-images/IMG_2703.PNG", "./../static/plans-images/IMG_2704.PNG"]
+    const images = ["./../plans-images/IMG_2698.PNG", "./../plans-images/IMG_2699.PNG", "./../plans-images/IMG_2700.PNG", "./../plans-images/IMG_2701.PNG", "./../plans-images/IMG_2702.PNG", "./../plans-images/IMG_2703.PNG", "./../plans-images/IMG_2704.PNG"]
 </script>
 
 <svelte:window bind:scrollY={y}/>
