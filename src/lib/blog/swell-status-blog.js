@@ -54,7 +54,7 @@ const p27 =
 const p28 =
   "The API, PostgreSQL and Redis are hosted on a DigitalOcean server. I chose this option for cost benefits. The backend is built by a docker-compose.yml file in the API, which lets me run Go, Postgres and Redis in a single Docker container. One challenge I had when deploying the API was registering it with HTTPS, which was necessary to use cookies. To do this, I installed Nginx and configured it as a reverse proxy, which then allowed me to use Let’s Encrypt to get my API HTTPS-certified. ";
 const p29 =
-  "I had a lot of fun building this project and learned so much along the way. I’ve gained a lot of confidence writing in Go and writing APIs in general. My command of CSS increased tremendously. I also now feel comfortable with some of the more advanced features of Svelte. I learned how to containerize a project with Docker and how to deploy that container. For my next project, I want to either do another web based project but with React instead of Svelte, or create a mobile application.";
+  "I had a lot of fun building this project and learned so much along the way. I’ve gained a significant amount of confidence writing in Go and writing APIs in general. My command of CSS increased tremendously. I also now feel comfortable with some of the more advanced features of Svelte. I learned how to containerize a project with Docker and how to deploy that container. For my next project, I want to either do another web based project but with React instead of Svelte, or create a mobile application.";
 
 export {
   p1,
