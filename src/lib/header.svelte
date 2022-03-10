@@ -222,6 +222,7 @@
 
     @media (max-width: 950px) {
         .container {
+            position: absolute;
             right: 0;
             bottom: auto;
             width: 100%;
