@@ -57,7 +57,7 @@
 
         <div class="small-screen-container">
             <button class="toggle-button"  on:click={() => toggle()}>
-                More Info
+                {isOpen ? "Show Less" : "More Info"}
             </button>
 
             {#if isOpen}
