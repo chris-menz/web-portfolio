@@ -105,7 +105,7 @@
                         <li>– View Surf Reports</li>
                         <ul>
                             <li>
-                                – All surf spots in the mainland United States (plans to expand to other regions)
+                                – Reports for all surf spots in New England (plans to expand to other regions)
                             </li>
                             <li>
                                 – Live surf conditions and 7-day forecast
