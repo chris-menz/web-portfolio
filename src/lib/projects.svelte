@@ -1,5 +1,6 @@
 <script>
     import SurfProject from "./surfProject.svelte";
+    import PheProject from "./pheProject.svelte";
 </script>
 
 <main>
@@ -9,6 +10,7 @@
         </div>
         <div class="projects">
             <SurfProject />
+            <PheProject />
         </div>
     </div>
 </main>

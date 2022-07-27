@@ -1,5 +1,4 @@
 <script>
-    import IconBaselineSurfing from "~icons/ic/baseline-surfing"
     import IconGithub from "~icons/bi/github"
     import IconOutlineArticle from "~icons/ic/outline-article"
     import { slide } from "svelte/transition";
@@ -7,46 +6,30 @@
     let showPurpose = false;
     let showFeatures = true;
 
-    const iconStyle="color: white; font-size: 1.25rem; margin-left: -8px; margin-right: 5px"
-
     const purpose = "Surfers want to surf good waves. To know if and when the waves will be good, they need to check the surf conditions, which provides information regarding wave height, power, shape, and overall quality." 
     const purpose2 =  "One way that surfers can gain a better understanding of what conditions create good waves at their local surf spots is by logging their surf sessions. This entails keeping track of what the conditions were and how good the waves were. Surfers can then reference these sessions while viewing conditions forecasts and get a general idea of what kind of waves those forecasted conditions will create."
     
+    const iconStyle="color: white; font-size: 1.25rem; margin-left: -8px; margin-right: 5px"
 
-    import { onMount } from 'svelte';
-
-    let Carousel; // for saving Carousel component class
-    let carousel; // for calling methods of the carousel instance
-    onMount(async () => {
-        const module = await import('svelte-carousel');
-        Carousel = module.default;
-    });
-
-    const handleNextClick = () => {
-        carousel.goToNext()
-    }
-
-    const images = ["./../surf-images/surfwebimage1.png", "./../surf-images/surfwebimage2.png", "./../surf-images/surfwebimage3.png", "./../surf-images/surfwebimage4.png"]
-
+  
 </script>
 
 <main>
     <div class="container">
         
         <div class="header">
-            <a href="https://www.swellstatus.com">SwellStatus.com<IconBaselineSurfing style="margin-bottom: -10px"></IconBaselineSurfing></a>
+            <a href="https://github.com/chris-menz/phe-express-server">Project Homeless Employment</a>
         </div>
         <div class="subheader">
-            A surf forecasting and logging web application
+            A web application to help unhoused individuals find employment
         </div>
-
 
         <div class="sub-subheader-container">
             <div class="sub-subheader">
-                Role: Solo Devloper
+                Role: Software Lead (Team of 5), DevOps, Backend Devlopment
             </div>
             <div class="sub-subheader">
-                Timeline: January 2022 - Present
+                Timeline: June 2022 - Present
             </div>
         </div>
 
@@ -54,95 +37,24 @@
          <div class="buttons-container">
                 
                 
-                <a class="code-button" href="https://github.com/chris-menz/swell-status">
+                <a class="code-button" href="https://github.com/chris-menz/phe-frontend">
                     <IconGithub style={iconStyle}></IconGithub>
-                    <div style="margin-left: 5px;">Repository</div>
+                    <div style="margin-left: 5px;">Front-End Repo</div>
                 </a>
 
-                <a class="blog-button" href="/blog/swell-status-blog">
-                    <IconOutlineArticle style={iconStyle}></IconOutlineArticle>
-                    <div>Developer Blog</div>
+                <a class="code-button" href="https://github.com/chris-menz/phe-express-server">
+                    <IconGithub style={iconStyle}></IconGithub>
+                    <div style="margin-left: 5px;">Back-End Repo</div>
                 </a>
                 
             </div>
 
-        <div class="carousel">
-            <svelte:component
-                        this={Carousel}
-                        bind:this={carousel}
-                        let:loaded
-            >
-                {#each images as src, imageIndex (src)}
-                    <div class="img-container">
-                        {#if loaded.includes(imageIndex)}
-                            <img {src} alt="surf-web" class="image"/>
-                        {/if}
-                    </div>       
-                {/each}
-            </svelte:component>
-        </div>
+
         
         <div class="body-container">
            
-
-            <div class="tabs-container">
-                <div class="features-tab" 
-                    on:click={() => {showPurpose = false; showFeatures = true}}
-                    style="color: {showFeatures ? "black" : ""};"
-                >
-                    Features
-                </div>
-                <div class="purpose-tab" 
-                    on:click={() => {showPurpose = true; showFeatures = false}}
-                    style="color: {showPurpose ? "black" : ""};"
-                >
-                    Purpose
-                </div>
-                
-            </div>
             <div class="description">
-                {#if showPurpose}
-                    <p in:slide="{{ delay: 400, duration: 600}}" out:slide="{{ duration: 400 }}">
-                        {purpose}
-                        <br>
-                        <br>
-                        {purpose2}
-                    </p>
-                    
-                {/if}
-                {#if showFeatures}
-                    <ul class="features-list" in:slide="{{ delay: 400, duration: 600}}" out:slide="{{ duration: 400 }}">
-                        <li>– View Surf Reports</li>
-                        <ul>
-                            <li>
-                                – Reports for all surf spots in New England (plans to expand to other regions)
-                            </li>
-                            <li>
-                                – Live surf conditions and 7-day forecast
-                            </li>
-                            <li>
-                                – Includes tooltips to help newer surfers understand what each part of a surf report is and how it affects the waves
-                            </li>
-                        </ul>
-                        <li>
-                            – Save surf spots for quick look up (account needed)
-                        </li>
-                        <li>
-                            – Log surf sessions (account needed)
-                        </li>
-                            <ul>
-                                <li>– User decides if the session will be viewable to the public or only viewable to the user</li>
-                            </ul>
-                        <li>
-                            – View other users' public surf sessions
-                        </li>
-                        <li>
-                            – Comment on and "favorite" other users' public surf sessions (account needed)
-                        </li>
-                    </ul>
-                    
-                    
-                {/if}
+                Project Homeless Employment is a platform that will help unhoused individuals find jobs. Candidates will be able to sign up, create a profile, browse and apply for jobs, and view resources that will guide them to landing a job. Employers will be able to create job listings, as well as find candidates directly via a page with an endless scroll of candidates in their area.
             </div>
             <div class="tech-container">
                 <div class="tech-header">
@@ -152,23 +64,20 @@
                     Front-End
                 </div>
                 <div class="tech-list">
-                    <div class="list-item">TypeScript</div>
-                    <div class="list-item">Svelte + SvelteKit</div>
+                    <div class="list-item">JavaScript</div>
+                    <div class="list-item">React</div>
+                    <div class="list-item">Bootstrap</div>
                 </div>
                 <div class="tech-subheader">
                     Back-End
                 </div>
                 <div class="tech-list">
-                    <div class="list-item">Go</div>
-                    <div class="list-item">PostgreSQL</div>
-                    <div class="list-item">Redis</div>
-                    <div class="list-item">Docker</div>
+                    <div class="list-item">Node/TypeScript</div>
+                    <div class="list-item">Express</div>
+                    <div class="list-item">MongoDB</div>
                     <div class="list-item">Nginx</div>
                     <div class="list-item">DigitalOcean</div>
                 </div>
-            </div>
-            <div class="message">
-                Refer to the devloper blog for full details of the technologies used to build this project and their respective implementations.
             </div>
         </div>
 
@@ -189,7 +98,6 @@
     .container {
         display: grid;
         align-items: start;
-        margin-bottom: 1em;
     }
 
     .header a, .header a:visited {
@@ -244,7 +152,7 @@
     }
 
     .buttons-container{
-        margin-bottom: 0.5em;
+        margin-bottom: 0.75em;
         display: flex;
         grid-column: 1;
     }
@@ -368,31 +276,8 @@
     }
 
 
-    .carousel {
-        grid-column: 2;
-        grid-row: 2/6;
-        max-width: 520px;
-    }
 
-    .image {
-        width: 100%;
-        height: auto;
-    }
 
-    @media (max-width: 1300px){
-        .carousel {
-            max-width: 450px;
-        }
-    }
-
-    @media (max-width: 1150px){
-        .carousel {
-            grid-column: 1;
-            grid-row: 4;
-            margin-top: 1em;
-            margin-left: -1.25em;
-        }
-    }
 
     @media (max-width: 950px) {
         .buttons-container {
@@ -412,10 +297,6 @@
         .buttons-container a {
             font-size: 1rem;
             text-align: center;
-        }
-
-        .carousel {
-            max-width: 350px;
         }
     }
 </style>
