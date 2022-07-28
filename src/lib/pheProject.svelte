@@ -54,7 +54,12 @@
         <div class="body-container">
            
             <div class="description">
-                Project Homeless Employment is a platform that will help unhoused individuals find jobs. Candidates will be able to sign up, create a profile, browse and apply for jobs, and view resources that will guide them to landing a job. Employers will be able to create job listings, as well as find candidates directly via a page with an endless scroll of candidates in their area.
+                Project Homeless Employment is a platform that will help unhoused individuals find jobs. Candidates will be able to sign up, create a profile, browse and apply for jobs, and view resources that will guide them to landing a job. Employers will be able to create job listings, as well as find candidates directly via a page with an endless scroll of candidates in their area.          
+                Our team is working with local shelters and non-profits to ensure that our tool will meet the needs of our community.
+            </div>
+            <br>
+            <div class="description">
+                My role in this project is to lead the software development team to deliver a platform that is easy to use, tested and within the desired specifications of the stakeholders. After being named software lead, I got to know the strengths of my team and chose a software stack that would maximize productivity and create the best end result possible. I’ve taken care of DevOps work such as setting up CI/CD pipelines and creating a development guide for the team. I will be writing the Express backend while the rest of our team focuses on the React frontend.
             </div>
             <div class="tech-container">
                 <div class="tech-header">
@@ -139,7 +144,7 @@
     }
 
     .description {
-        max-width: 400px;
+        max-width: 500px;
         font-family: Helvetica, sans-serif;
         font-weight: lighter;
         font-size: 1.125rem;
