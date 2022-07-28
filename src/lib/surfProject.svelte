@@ -43,7 +43,7 @@
 
         <div class="sub-subheader-container">
             <div class="sub-subheader">
-                Role: Solo Devloper
+                Role: Solo Developer
             </div>
             <div class="sub-subheader">
                 Timeline: January 2022 - Present
